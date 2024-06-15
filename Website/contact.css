@@ -1,0 +1,245 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: black;
+  font-size: 21px;
+  font-family: "new_font_amagro", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  animation: fadeIn 1s;
+  height: inherit;
+}
+
+@font-face {
+  font-family: 'new_font_amagro';
+  src: url('/amagro/Amagro.ttf') format('ttf');
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100;
+  }
+}
+
+.about {
+  padding: 1em;
+}
+
+.about h1 {
+  color: #AB96FF;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.about p {
+  word-wrap: break-word;
+  margin: 0.5em 5em;
+  text-align: center;
+}
+
+p {
+  font-family: serif;
+  color: white;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */ /* Adjust as needed */
+}
+
+div {
+  margin: 0.25em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+hr {
+  margin: auto 7.5em;
+}
+
+.topnav {
+  background-color: inherit;
+  padding-right: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.title {
+  overflow: hidden;
+  float: left;
+  display: flex;
+  text-align: center;
+  padding: 1em 1em 1em 9%;
+  text-decoration: none;
+  font-size: 2.1rem;
+  color: #AB96FF;
+  font-weight: bold;
+  align-items: center;
+  white-space: nowrap;
+}
+
+
+#firstnav {
+  padding-left: 23%;
+}
+
+.pages {
+  float: left;
+  display: block;
+  overflow: hidden;
+  text-align: center;
+  padding: 1.7em 21px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+  background-attachment: scroll;
+}
+
+.pages:hover {
+  color: #AB96FF;
+}
+
+
+#form {
+  padding-top: 3em;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+}
+
+#contact {
+  display: inherit;
+  flex-direction: inherit;
+  margin: inherit;
+  max-width: inherit; /* Adjust as needed */
+  height: inherit;
+}
+
+#form-main-side {
+  flex: 1;
+  padding: 10px;
+  width: 5em;
+  margin-right: 5em;
+}
+
+#form-question-side {
+  flex: 1;
+  padding: 10px;
+  height: inherit;
+}
+
+section {
+  display: block;
+  margin-bottom: 1em;
+}
+
+label {
+  color: white;
+  font-size: 1em;
+}
+
+.question {
+  height: 5em;
+}
+
+input, textarea, input:-webkit-autofill {
+  display: inherit;
+  box-sizing: inherit;
+  background-color: black;
+  border: 0.1em solid white;
+  margin-top: 0.5em;
+  animation: 0.3s ease-in-out infinite alternate;
+  padding: 1em;
+  resize: none;
+  font-family: "new_font_amagro", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-box-shadow: 0 0 0 50px black inset;
+  -webkit-text-fill-color: white;
+}
+
+input:hover, textarea:hover {
+  border: 0.1em solid red;
+}
+
+input[type="text"] {
+  color: white;
+}
+
+input:focus, input[type="email"]:focus, textarea:focus,
+input:-webkit-autofill:focus {
+  background-color: black;
+  color: white;
+  border: 0.1em solid red;
+  font-family: "new_font_amagro", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.submit {
+  width: 3em;
+  text-align: center;
+  color: black;
+  height: 1.5em;
+  margin-top: 0.3em;
+  margin-left: 8.21em;
+  font-size: 29px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.submit:hover {
+  transition: 0.3s ease-in-out;
+  transform: translateY(-5px);
+}
+
+button {
+  display: inline-block;
+  padding: 0 20px; /* Adjust padding as needed */
+  line-height: 3em; /* Same as button height */
+  text-align: center; /* Horizontally center the text */
+  background-color: #AB96FF;
+  height: 3em;
+}
+
+footer {
+  margin: auto;
+  margin-top: 3em;
+  padding: 0.3em 1em 1em 1em;
+  margin-bottom: 3em;
+  color: white;
+  text-align: center;
+  outline: 1px solid white;
+  width: 25em;
+}
+
+.school_address {
+  color: white;
+}
+
+p a {
+  display: block; 
+}
+
+@media (max-width: 777px) {
+
+  .title {
+    font-size: 1rem;
+  }
+
+  #firstnav {
+    padding: 0.3rem;
+  }
+  .pages {
+    margin-top: 1em;
+    font-size: 0.5em;
+    padding: 0.3rem;
+  }
+}

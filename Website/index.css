@@ -1,0 +1,165 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: black;
+  font-size: 21px;
+  font-family: "new_font_amagro", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  animation: fadeIn 1s;
+}
+
+@font-face {
+  font-family: 'new_font_amagro';
+  src: url('/amagro/Amagro.ttf') format('ttf');
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100;
+  }
+}
+
+p,
+h1 {
+  font-family: serif;
+  color: white;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */ /* Adjust as needed */
+}
+
+h1 {
+  animation: typewriter 3s steps(40);
+  border-right: .15em solid #AB96FF; /* The typewriter cursor */
+}
+
+@keyframes typewriter {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+div {
+  margin: 5px;
+}
+
+#logo {
+  height: 2.1em;
+  
+}
+
+h1 {
+  text-align: center;
+  margin: inherit;
+  padding-top: inherit;
+  font-size: 4.1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+hr {
+  margin: auto 159px;
+}
+
+.Prices,
+.Services {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  text-decoration: none;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.Prices {
+  margin-top: 69px;
+}
+
+.Services {
+  width: 245px;
+  text-align: center;
+  background-color: #AB96FF;
+  height: 89px;
+  margin-top: 69px;
+  font-size: 29px;
+  text-decoration: none;
+}
+
+button:hover {
+  transition-duration: 0.5s ease-in-out;
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+.topnav {
+  background-color: inherit;
+  padding-right: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3em;
+}
+
+.title {
+  overflow: hidden;
+  float: left;
+  display: flex;
+  text-align: center;
+  padding: 1em 1em 1em 9%;
+  text-decoration: none;
+  font-size: 2.1rem;
+  color: #AB96FF;
+  font-weight: bold;
+  align-items: center;
+}
+
+#firstnav {
+  padding-left: 23%;
+}
+
+.pages {
+  float: left;
+  display: block;
+  overflow: hidden;
+  text-align: center;
+  padding: 1.7em 21px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+  background-attachment: scroll;
+}
+
+.pages:hover {
+  color: #AB96FF;
+}
+
+footer {
+  margin: auto;
+  margin-top: 3em;
+  padding: 0.3em 1em 1em 1em;
+  margin-bottom: 3em;
+  color: white;
+  text-align: center;
+  outline: 1px solid white;
+  width: 25em;
+}
+
+.school_address {
+  color: white;
+}
+
+p a {
+  display: block; 
+}
